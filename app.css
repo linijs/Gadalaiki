@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Montserrat:wght@500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p,
+h1 {
+    overflow-wrap: break-word;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(216, 82%, 94%);
+}
+
+.pavasaris {
+    background: #fec89a;
+}
+
+.vasara {
+    background: #fec5bb;
+}
+
+.rudens {
+    background: #fdffb6;
+}
+
+.ziema {
+    background: #9bf6ff;
+}
+
+/* ******************** */
+/* CARD LAYOUT */
+/* ******************** */
+
+article {
+    overflow: hidden;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background: hsl(0, 0%, 100%);
+    font-family: "Montserrat", sans-serif;
+    margin: 20px;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.7s ease;
+}
+
+/* ******************** */
+/* CARD LAYOUT IMG */
+/* ******************** */
+
+.picture {
+    overflow: hidden;
+    background-position: center 50%;
+    background-size: 100%;
+    border-radius: 20px;
+    transition: 0.7s ease;
+}
+
+img {
+    width: 100%;
+    max-height: 580px;
+    object-fit: cover;
+    transition: 0.7s ease;
+}
+
+/* ******************** */
+/* CARD LAYOUT TEXT */
+/* ******************** */
+
+.card-main-content {
+    padding: 20px;
+}
+
+.card-main-content > h1 {
+    display: flex;
+    justify-content: center;
+    font-family: "Fraunces", serif;
+    font-size: clamp(1.63rem, calc(1.34rem + 1.43vw), 1.88rem);
+    margin-bottom: 10px;
+    color: hsl(212, 21%, 14%);
+}
+
+.card-main {
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: clamp(0.83rem, calc(0.44rem + 0.53vw), 1rem);
+    color: hsl(228, 12%, 48%);
+}
+
+/* ******************** */
+/* CARD LAYOUT NAV */
+/* ******************** */
+
+.card-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    transition: 0.7s ease;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0a161f;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.7s ease;
+}
+
+/* borders */
+li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+/* borders */
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 32px;
+    transition: 0.7s ease;
+}
+
+li a:hover:not(.active),
+a:focus {
+    background: #333;
+}
+
+.active {
+    background-color: #3ab0ff;
+    padding: 14px 32px;
+    cursor: default;
+    text-align: center;
+}
+
+/* ******************** */
+/* CARD LAYOUT FOOTER */
+/* ******************** */
+
+.card-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.card-footer > hr {
+    margin-top: 10px;
+    width: 200px;
+}
+
+.card-footer > a {
+    transition: 0.7s ease;
+}
+
+.card-footer > a:hover {
+    font-weight: 700;
+}
+
+/* ******************** */
+/* MEDIA QUERY */
+/* ******************** */
+
+@media (max-width: 584px) {
+    img {
+        max-height: 300px;
+        transition: 0.7 ease;
+    }
+    .card-nav {
+        flex-direction: column;
+    }
+    li {
+        float: none;
+        transition: 0.7 ease;
+    }
+}
