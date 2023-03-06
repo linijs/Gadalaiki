@@ -1,19 +1,12 @@
 # Gadalaiki
 
- This website showcases the four seasons with weather
-                            animations and responsive design. The site features
-                            interactive animations that depict the different
-                            weathers and climates of each season, including
-                            rain, snow, and wind.
+This website showcases the four seasons with weather animations and responsive design. The site features interactive animations that depict the different weathers and climates of each season, including rain, snow, and wind.
 
-  As users click through different sections, they're
-                            able to select each season, which automatically
-                            adjusts the scene to that season's weather, and
-                            atmosphere.
+As users click through different sections, they're able to select each season, which automatically adjusts the scene to that season's weather, and atmosphere.
 
-In addition, the responsive design ensures that the
-                            site works on different devices, from smartphones to
-                            tablets and desktop computers.                            
+In addition, the responsive design ensures that the site works on different devices, from smartphones to tablets and desktop computers.     
+
+Hosted on Render: https://gadalaiki.onrender.com
                       
                             
 
